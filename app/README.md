@@ -8,18 +8,18 @@ function doClick(e) {
     //alert($.label.text);
     var about = Alloy.createWidget('es.kabomi.about', 'widget',
     {
-    	title: "Problem?",
-			main : "Created by meme",
-			thanksTo: "Caro|Traductor,Tony|Tester",
-			thanksTitle: L("thanksTo"),
-		  //imgWin: false, //false value = don't show this image
-			//imgMain: false,
-			//imgTitle: "/default.png"
-		});
-		//Set images included in this widget
-		//about.setPath('logo', 'logo.png');
-		about.setPath('main', 'app.png');
-		//about.setPath('win', 'background.png');
+      title: "Problem?",
+      main : "Created by meme",
+      thanksTo: "Caro|Traductor,Tony|Tester",
+      thanksTitle: L("thanksTo"),
+      //imgWin: false, //false value = don't show this image
+      //imgMain: false,
+      //imgTitle: "/default.png"
+    });
+    //Set images included in this widget
+    //about.setPath('logo', 'logo.png');
+    about.setPath('main', 'app.png');
+    //about.setPath('win', 'background.png');
 
     about.show();
 }
@@ -36,19 +36,17 @@ Every param is listed above.
 imgWin, imgMain and imgTitle are set in the widget.xml
   * You can override its image value with a app path like "/default.png" or
   * You can override its image value with a widget path calling setPath method like so 
-    about.setPath('main', 'app.png');
+    about.setPath('main', 'app.png') or
   * You can pass a false value in order to delete the object (hide the window backgroundImage)
 
 
 ## Problem?
 
 Contact me :) 
-[ at ]kabomi5 on twitter
-kabomi[at]gmail[dot]com
+* [at]kabomi5 on twitter
+* kabomi[at]gmail[dot]com
 
 Or ask your question [here](http://developer.appcelerator.com/question/ask)
-
-
 
 _____
 _____
