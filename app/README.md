@@ -1,8 +1,7 @@
 Test about widget
 =================
 
-Usage example:
-_____________
+### Usage example:
 
 ```javascript
 function doClick(e) {  
@@ -27,13 +26,11 @@ function doClick(e) {
 $.index.open();
 ```
 
-Result
-______
+### Result
 
-(https://github.com/kabomi/Alloy-about-widget/blob/master/app/assets/alloyAboutWidget.png)
+![Result](https://raw.github.com/kabomi/Alloy-about-widget/master/app/assets/alloyAboutWidget.png)
 
-Notes
-_____
+## Notes
 
 Every param is listed above.
 imgWin, imgMain and imgTitle are set in the widget.xml
@@ -43,16 +40,18 @@ imgWin, imgMain and imgTitle are set in the widget.xml
   * You can pass a false value in order to delete the object (hide the window backgroundImage)
 
 
-Problem?
-________
+## Problem?
+
 Contact me :) 
 [ at ]kabomi5 on twitter
 kabomi[at]gmail[dot]com
 
-Or ask your question [2]here
+Or ask your question [here](http://developer.appcelerator.com/question/ask)
 
-[2] http://developer.appcelerator.com/question/ask
 
+
+_____
+_____
 
 
 Welcome to Alloy. Prepare to be amazed.
