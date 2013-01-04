@@ -1,3 +1,60 @@
+Test about widget
+=================
+
+Usage example:
+_____________
+
+```javascript
+function doClick(e) {  
+    //alert($.label.text);
+    var about = Alloy.createWidget('es.kabomi.about', 'widget',
+    {
+    	title: "Problem?",
+			main : "Created by meme",
+			thanksTo: "Caro|Traductor,Tony|Tester",
+			thanksTitle: L("thanksTo"),
+		  //imgWin: false, //false value = don't show this image
+			//imgMain: false,
+			//imgTitle: "/default.png"
+		});
+		//Set images included in this widget
+		//about.setPath('logo', 'logo.png');
+		about.setPath('main', 'app.png');
+		//about.setPath('win', 'background.png');
+
+    about.show();
+}
+$.index.open();
+```
+
+Result
+______
+
+(https://github.com/kabomi/Alloy-about-widget/blob/master/app/assets/alloyAboutWidget.png)
+
+Notes
+_____
+
+Every param is listed above.
+imgWin, imgMain and imgTitle are set in the widget.xml
+  * You can override its image value with a app path like "/default.png" or
+  * You can override its image value with a widget path calling setPath method like so 
+    about.setPath('main', 'app.png');
+  * You can pass a false value in order to delete the object (hide the window backgroundImage)
+
+
+Problem?
+________
+Contact me :) 
+[ at ]kabomi5 on twitter
+kabomi[at]gmail[dot]com
+
+Or ask your question [2]here
+
+[2] http://developer.appcelerator.com/question/ask
+
+
+
 Welcome to Alloy. Prepare to be amazed.
 ========================================
 
@@ -28,4 +85,3 @@ migrations			generated model migrations go here
 widgets				pre-built, reusable components for your Ally apps. 
 
 Also, in the root is the alloy.jmk file and config.json.  Alloy.jmk acts like a makefile and can be used to hook into the Alloy compiler to customize the build process. The config.json file is where you can declare runtime contstants, and widget dependencies.
-
