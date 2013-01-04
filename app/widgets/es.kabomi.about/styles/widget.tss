@@ -1,0 +1,74 @@
+".bigText": {
+	color: 'white',
+	font: {
+		fontSize: 18,
+		fontWeight: 'bold'
+	},
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+},
+"#title":{
+	height: 40,
+	width:'70%'
+},
+"#head":{
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL
+},
+"Label":{
+	color: 'white',
+	font:{
+		fontSize: 14
+	},
+	height: Ti.UI.SIZE,
+	width: 'auto',
+	top: 3,
+	left: 5
+},
+".smallText":{
+	color: '#CECECE',
+	font: {
+		fontSize: 12
+	},
+	height: Ti.UI.SIZE,
+	width: 'auto'
+},
+"#win":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	title:'About',
+	backgroundColor:'black'
+},
+"#imgmain":{
+	top: expr(OS_IOS?7:0)
+},
+"#mainView":{
+	top: expr(OS_IOS?35:0),
+	contentHeight:'auto',
+  scrollType:'vertical'
+},
+"#imgTitle":{
+	right: 5,
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+},
+"#navButton":{
+	title:L('back'),
+	right: 10,
+	width:Ti.UI.SIZE,
+	height:30,
+	style: Ti.UI.iPhone.SystemButtonStyle.BORDERED
+},
+"#table":{
+	backgroundColor: 'transparent',
+	left:3,
+	right:3,
+	height:Ti.UI.SIZE,
+	rowHeight:25,
+	separationColor: 'green',
+	//separatorStyle: Ti.UI.iPhone.TableViewSeparatorStyle.NONE, 
+	top: expr(OS_IOS?0:-15)
+},
+".pair_row":{
+	backgroundColor:'green'
+}

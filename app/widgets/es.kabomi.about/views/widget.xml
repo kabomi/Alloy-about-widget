@@ -1,0 +1,19 @@
+<Alloy>
+	<Window id='win' backgroundImage='default.png'>
+		<View id='navBar' layout='vertical' platform='ios'>
+			<Button id='navButton'/>
+		</View>
+		<ScrollView id='mainView' layout='vertical'>
+			<View id='head' layout='horizontal'>
+				<Label id='title' class='bigText'></Label>
+				<ImageView id='imgTitle' image='/appicon.png'/>
+			</View>
+			<ImageView id='imgMain' image='/app.png'/>
+			<Label id='main'></Label>
+			<Label id='licence' class='smallText'></Label>
+			<Label id='thanksTitle' class='bigText'></Label>
+			<Label id='thanksTo'></Label>
+			<TableView id='table'></TableView>
+		</ScrollView>
+	</Window>
+</Alloy>

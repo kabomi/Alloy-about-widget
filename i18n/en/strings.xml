@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="welcome">Welcome to %s!</string>
+	<string name="back">Return</string>
+	<string name="thanksTo">Special Thanks to:</string>
+</resources>

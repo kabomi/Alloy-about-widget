@@ -1,0 +1,9 @@
+<Alloy>
+	<TableViewRow id="row">
+		<View class="hView">
+			<Label id="space" platform="ios" text=' '>
+			<Label id="name"/>
+			<Label id="contrib"/>
+		</View>
+	</TableViewRow>
+</Alloy>

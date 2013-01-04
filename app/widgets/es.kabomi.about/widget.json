@@ -1,0 +1,13 @@
+{
+	"id": "es.kabomi.about",
+	"name": "es.kabomi.about",
+	"description" : "Just another about window",
+	"author": "@kabomi5",
+	"version": "1.0",
+	"copyright":"Copyright (c) 2013",
+	"license":"Public Domain",
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"2.1",
+	"tags":"about,author,views",
+	"platforms":"android,ios"
+}

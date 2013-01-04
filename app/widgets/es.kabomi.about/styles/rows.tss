@@ -1,0 +1,25 @@
+".hView": {
+	layout: "horizontal",
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL
+},
+"#row": {
+	className: "pair_row",
+	height:25
+},
+"Label":{
+	color: 'white',
+	font:{
+		fontSize: 18
+	},
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	top: 3
+},
+"#name":{
+	width:'50%'
+},
+"#contrib": {
+	color: '#CDCDCD',
+	width: '40%'
+}
