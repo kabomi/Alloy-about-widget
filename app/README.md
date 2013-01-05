@@ -8,8 +8,8 @@ function doClick(e) {
     //alert($.label.text);
     var about = Alloy.createWidget('es.kabomi.about', 'widget',
     {
-      title: "Problem?",
-      main : "Created by meme",
+      title: "MyApp title",
+      main : "Created by me",
       thanksTo: "Caro|Traductor,Tony|Tester",
       thanksTitle: L("thanksTo"),
       //imgWin: false, //false value = don't show this image
@@ -40,9 +40,9 @@ imgWin, imgMain and imgTitle are set in the widget.xml
   * You can pass a false value in order to delete the object (hide the window backgroundImage)
 
 
-## Problem?
+## Questions?
 
-Contact me :) 
+Contact me:
 * [at]kabomi5 on twitter
 * kabomi[at]gmail[dot]com
 

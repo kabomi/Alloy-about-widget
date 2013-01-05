@@ -2,8 +2,8 @@ function doClick(e) {
     //alert($.label.text);
     var about = Alloy.createWidget('es.kabomi.about', 'widget',
     {
-			title: "Problem?",
-			main : "Created by meme",
+			title: "MyApp Title",
+			main : "Created by me",
 			thanksTo: "Caro|Traductor,Tony|Tester",
 			thanksTitle: L("thanksTo"),
 			licence: "All rights reserved 2013",
