@@ -2,6 +2,11 @@ var args = arguments[0] || {};
 if(args !== {})
 	init(args);
 function init(o){
+	//dynamic exprs in tss files no longer accepted
+	if(OS_IOS){
+		$.imgMain.top = 7;//0
+		$.table.top = 0;//-15
+	}
 	$.title.text = o.title || "";
 	$.main.text = o.main || "";
 	$.licence.text = o.licence || "";
@@ -9,24 +14,21 @@ function init(o){
 		$.thanksTitle.text = o.thanksTitle || ($.thanksTitle.text == ""? "Thanks to:" : $.thanksTitle.text);
 	}else{
 		$.mainView.remove($.thanksTo);
-		//$.thanksTo.hide();
 	}
 	if(o.imgTitle == false){
 		$.head.remove($.thanksTo);
-		//$.imgTitle.hide();
 	}else{
 		$.imgTitle.image = o.imgTitle || $.imgTitle.image;
 	}
 	if(o.imgMain == false){
 		$.mainView.remove($.imgMain);
-		//$.imgMain.hide();
 	}else{
 		$.imgMain.image = o.imgMain || $.imgMain.image;
 	}
 	if(o.imgWin == false){
 		$.win.backgroundImage = null;
 	}else{
-		$.win.backgroundImage = o.imgWin || $.win.backgroundImage;
+		$.win.backgroundImage = o.imgWin || (OS_ANDROID?$.win.backgroundImage.toLowerCase():$.win.backgroundImage);
 	}
 	if(o.thanksTo){
 		var data = [];

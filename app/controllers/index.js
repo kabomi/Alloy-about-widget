@@ -17,7 +17,7 @@ function doClick(e) {
 		});
 		//Set images included in this widget
 		//about.setPath('logo', 'logo.png');
-		about.setPath('main', 'app.png');
+		about.setPath('main', '/app.png');
 		//about.setPath('win', 'background.png');
 		
     about.show();
