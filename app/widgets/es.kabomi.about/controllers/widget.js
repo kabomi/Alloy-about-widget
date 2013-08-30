@@ -6,11 +6,6 @@ function init(o){
 	parseOptions(o);
 };
 function initPlatformStuff(){
-	//dynamic exprs in tss files no longer accepted
-	if(OS_IOS){
-		$.imgMain.top = 7;//0
-		$.table.top = 0;//-15
-	}
 	if(OS_ANDROID){
 		$.win.addEventListener('android:back', function(){
 			$.win.close();

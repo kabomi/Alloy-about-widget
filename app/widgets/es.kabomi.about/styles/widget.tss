@@ -40,7 +40,7 @@
 	backgroundColor:'black'
 },
 "#imgMain":{
-	top: 0//expr(OS_IOS?7:0)
+	top: 0
 },
 "#mainView":{
 	top: 0,
