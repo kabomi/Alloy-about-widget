@@ -1,5 +1,10 @@
 <Alloy>
 	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
+		<NavigationGroup id="navgroup" platform="ios,mobileweb">
+			<Window class="main">
+				<Label id="label" onClick="doClick">Click Me!</Label>
+			</Window>
+		</NavigationGroup>
+		<Label id="label" onClick="doClick" platform="android">Click Me!</Label>
 	</Window>
 </Alloy>

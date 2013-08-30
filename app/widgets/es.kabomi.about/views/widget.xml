@@ -1,8 +1,5 @@
 <Alloy>
-	<Window id='win' backgroundImage='default.png'>
-		<View id='navBar' layout='vertical' platform='ios'>
-			<Button id='navButton'/>
-		</View>
+	<Window id='win' backgroundImage='/Default.png'>
 		<ScrollView id='mainView' layout='vertical'>
 			<View id='head' layout='horizontal'>
 				<Label id='title' class='bigText'></Label>

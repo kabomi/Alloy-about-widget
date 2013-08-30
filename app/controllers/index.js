@@ -1,3 +1,7 @@
+if (OS_IOS || OS_MOBILEWEB) {
+	// attach the navgroup to Alloy.CFG so it can be accessed globally
+	Alloy.CFG.navgroup = $.navgroup;
+}
 function doClick(e) {  
     //alert($.label.text);
     var about = Alloy.createWidget('es.kabomi.about', 'widget',

@@ -41,22 +41,19 @@ function init(o){
 		$.thanksTo.hide();
 	}
 	
-	if(OS_IOS){
-		//Ti.API.info("Test locales back:" + L('back'));
-		$.navButton.on('click', function() {
-			Ti.API.info("NavButton Click!!" );
-				$.win.close();
-		});
-	}
 	if(OS_ANDROID){
-		$.win.on('android:back', function(){
+		$.win.addEventListener('android:back', function(){
 			$.win.close();
 		});
 	}
 };
 exports.init = init;
 exports.show = function(){
-	$.win.open();
+	if(Alloy.CFG.navgroup){
+		Alloy.CFG.navgroup.open($.win);
+	}else{
+		$.win.open();
+	}
 };
 exports.hide = function(){
 	$.win.close();
