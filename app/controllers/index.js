@@ -3,7 +3,6 @@ if (OS_IOS || OS_MOBILEWEB) {
 	Alloy.CFG.navgroup = $.navgroup;
 }
 function doClick(e) {  
-    //alert($.label.text);
     var about = Alloy.createWidget('es.kabomi.about', 'widget',
     {
 			title: "MyApp Title",
@@ -16,9 +15,9 @@ function doClick(e) {
 			//imgTitle: "/default.png"
 		});
 		//Set images included in this widget
-		//about.setPath('logo', 'logo.png');
+		//about.setPath('logo', '/logo.png');
 		about.setPath('main', '/app.png');
-		//about.setPath('win', 'background.png');
+		//about.setPath('win', '/background.png');
 		
     about.show();
 }
