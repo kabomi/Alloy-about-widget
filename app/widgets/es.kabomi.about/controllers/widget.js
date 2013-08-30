@@ -2,11 +2,27 @@ var args = arguments[0] || {};
 if(args !== {})
 	init(args);
 function init(o){
+	initPlatformStuff();
+	parseOptions(o);
+};
+function initPlatformStuff(){
 	//dynamic exprs in tss files no longer accepted
 	if(OS_IOS){
 		$.imgMain.top = 7;//0
 		$.table.top = 0;//-15
 	}
+	if(OS_ANDROID){
+		$.win.addEventListener('android:back', function(){
+			$.win.close();
+		});
+	}
+};
+function parseOptions(o){
+	parseOptionsTexts(o);
+	parseOptionsImgs(o);
+	parseOptionsTable(o);
+};
+function parseOptionsTexts(o){
 	$.title.text = o.title || "";
 	$.main.text = o.main || "";
 	$.licence.text = o.licence || "";
@@ -15,6 +31,8 @@ function init(o){
 	}else{
 		$.mainView.remove($.thanksTo);
 	}
+};
+function parseOptionsImgs(o){
 	if(!o.imgTitle){
 		$.head.remove($.thanksTo);
 	}else{
@@ -30,6 +48,8 @@ function init(o){
 	}else{
 		$.win.backgroundImage = o.imgWin || (OS_ANDROID?$.win.backgroundImage.toLowerCase():$.win.backgroundImage);
 	}
+};
+function parseOptionsTable(o){
 	if(o.thanksTo){
 		var data = [];
 		_.each(o.thanksTo.split(','), function(pair) {
@@ -42,12 +62,6 @@ function init(o){
 		$.table.setData(data);
 		$.thanksTo.hide();
 	}
-	
-	if(OS_ANDROID){
-		$.win.addEventListener('android:back', function(){
-			$.win.close();
-		});
-	}
 };
 
 function show(){
@@ -57,9 +71,15 @@ function show(){
 		$.win.open();
 	}
 };
+
 function hide(){
-	$.win.close();
+	if(Alloy.CFG.navgroup){
+		Alloy.CFG.navgroup.close($.win);
+	}else{
+		$.win.close();
+	}
 };
+
 function setPath(o, path){
 	switch(o){
 		case "main":
