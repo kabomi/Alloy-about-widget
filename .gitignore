@@ -5,3 +5,5 @@ build.log
 build
 npm-debug.log
 tmp
+*.pyc
+spec
