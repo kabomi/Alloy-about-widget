@@ -49,18 +49,18 @@ function init(o){
 		});
 	}
 };
-exports.init = init;
-exports.show = function(){
+
+function show(){
 	if(Alloy.CFG.navgroup){
 		Alloy.CFG.navgroup.open($.win);
 	}else{
 		$.win.open();
 	}
 };
-exports.hide = function(){
+function hide(){
 	$.win.close();
 };
-exports.setPath = function(o, path){
+function setPath(o, path){
 	switch(o){
 		case "main":
 			$.imgMain.image = WPATH(path);
@@ -73,3 +73,8 @@ exports.setPath = function(o, path){
 			break;
 	}
 };
+
+exports.init = init;
+exports.show = show;
+exports.hide = hide;
+exports.setPath = setPath;
