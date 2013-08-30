@@ -33,17 +33,17 @@ function parseOptionsTexts(o){
 	}
 };
 function parseOptionsImgs(o){
-	if(!o.imgTitle){
+	if(!o.imgTitle && !$.imgTitle.image){
 		$.head.remove($.thanksTo);
 	}else{
 		$.imgTitle.image = o.imgTitle || $.imgTitle.image;
 	}
-	if(!o.imgMain){
+	if(!o.imgMain && !$.imgMain.image){
 		$.mainView.remove($.imgMain);
 	}else{
 		$.imgMain.image = o.imgMain || $.imgMain.image;
 	}
-	if(!o.imgWin){
+	if(!o.imgWin && !$.win.backgroundImage){
 		$.win.backgroundImage = null;
 	}else{
 		$.win.backgroundImage = o.imgWin || (OS_ANDROID?$.win.backgroundImage.toLowerCase():$.win.backgroundImage);
