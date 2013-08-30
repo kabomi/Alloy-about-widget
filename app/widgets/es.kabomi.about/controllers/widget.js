@@ -15,17 +15,17 @@ function init(o){
 	}else{
 		$.mainView.remove($.thanksTo);
 	}
-	if(o.imgTitle == false){
+	if(!o.imgTitle){
 		$.head.remove($.thanksTo);
 	}else{
 		$.imgTitle.image = o.imgTitle || $.imgTitle.image;
 	}
-	if(o.imgMain == false){
+	if(!o.imgMain){
 		$.mainView.remove($.imgMain);
 	}else{
 		$.imgMain.image = o.imgMain || $.imgMain.image;
 	}
-	if(o.imgWin == false){
+	if(!o.imgWin){
 		$.win.backgroundImage = null;
 	}else{
 		$.win.backgroundImage = o.imgWin || (OS_ANDROID?$.win.backgroundImage.toLowerCase():$.win.backgroundImage);
