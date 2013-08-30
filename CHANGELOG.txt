@@ -1,1 +1,4 @@
-Place your change log text here.  This file will be incorporated with your app at package time.
+## 1.2 (30 August 2013)
+
+Remove ugly iOS back button. Used NavigationGroup instead. 
+Some beautify and clean up and beautify.

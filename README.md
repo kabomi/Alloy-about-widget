@@ -11,7 +11,7 @@ Then add dependency line to your `app/config.json` like [this one](https://githu
 
 ```javascript
   "dependencies": {
-  		"es.kabomi.about": "1.0"
+  		"es.kabomi.about": "1.2"
 	}
 ```
 You are done. [Usage example](#usage-example)
@@ -29,22 +29,22 @@ In Titanium Studio:
 
 ```javascript
 function doClick(e) {  
-    //alert($.label.text);
     var about = Alloy.createWidget('es.kabomi.about', 'widget',
     {
-      title: "MyApp title?",
-      main : "Created by me",
-      thanksTo: "Caro|Traductor,Tony|Tester",
-      thanksTitle: L("thanksTo"),
-      //imgWin: false, //false value = don't show this image
-      //imgMain: false,
-      //imgTitle: "/default.png"
-    });
-    //Set images included in this widget
-    //about.setPath('logo', 'logo.png');
-    about.setPath('main', 'app.png');
-    //about.setPath('win', 'background.png');
-
+			title: "MyApp Title",
+			main : "Created by me",
+			thanksTo: "Caro|Traductor,Tony|Tester",
+			thanksTitle: L("thanksTo"),
+			licence: "All rights reserved 2013",
+			//imgWin: false, //false value = don't show this image
+			//imgMain: false,
+			//imgTitle: "/default.png"
+		});
+		//Set images included in this widget
+		//about.setPath('logo', '/logo.png');
+		about.setPath('main', '/app.png');
+		//about.setPath('win', '/background.png');
+		
     about.show();
 }
 $.index.open();
@@ -74,21 +74,16 @@ Or ask your question [here](http://developer.appcelerator.com/question/ask)
 ___
 ___
 
-Welcome to your Appcelerator Titanium Mobile Project
+## LICENSES
 
-This is a blank project.  Start by editing your application's app.js to 
-make your first mobile project using Titanium.
-
-
+This project is licensed under The MIT License. Please see the LICENSE.txt file for the full license.
 
 ----------------------------------
-Stuff our legal folk make us say:
 
 Appcelerator, Appcelerator Titanium and associated marks and logos are 
 trademarks of Appcelerator, Inc. 
 
 Titanium is Copyright (c) 2008-2013 by Appcelerator, Inc. All Rights Reserved.
 
-Titanium is licensed under the Apache Public License (Version 2). Please
-see the LICENSE file for the full license.
+Titanium is licensed under the Apache Public License (Version 2). Please see the LICENSE file for the full license.
 

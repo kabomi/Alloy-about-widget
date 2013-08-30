@@ -8,5 +8,3 @@ tmp
 *.pyc
 spec
 .gitignore
-LICENSE.txt
-CHANGELOG.txt
